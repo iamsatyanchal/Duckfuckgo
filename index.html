@@ -54,7 +54,7 @@
 ">
 <img src="1200px-DuckDuckGo_logo.svg.png" style="width: 205px; display: block;
     position: relative;
-    margin: 0 auto;">
+    margin: 0 auto;" onclick="fuckfunc()">
 
 
 </center>
@@ -78,6 +78,15 @@
 
 <!-- HTML5 Speech Recognition API -->
 <script>
+function fuckfunc(){
+var value = document.getElementById("pg-index").style.filter
+if(value == "inherit"){
+document.getElementById("pg-index").style.filter = "invert(1)"
+}
+if (value == "invert(1)"){
+document.getElementById("pg-index").style.filter = "inherit"
+}
+}
 	function startDictation() {
   
 	  if (window.hasOwnProperty('webkitSpeechRecognition')) {
