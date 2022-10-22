@@ -14,7 +14,7 @@ function post(e) {
 
   if (action == 'ddg') parent.window.location.href = link;
 }
-
+console.log("thisi is true")
 if (window.addEventListener) window.addEventListener('message', post, false);
 else if (window.attachEvent) window.attachEvent('onmessage', post);
 </script>
